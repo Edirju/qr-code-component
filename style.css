@@ -1,0 +1,102 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+  /* Font */
+  --ff-base: "Outfit";
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(./Outfit/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--ff-base);
+  background-color: var(--Light-gray);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+/* General CSS */
+.container{
+  max-width: 360px;
+  margin: 0 auto;
+  .card{
+    background-color: var(--White);
+    padding: 18px;
+    border-radius: 17px;
+    text-align: center;
+    margin: 0 1em;
+  }
+  .card img{
+    width: 100%;
+    border-radius: 12px;
+  }
+  .text{
+    padding: 22px 10px;
+    & h2{
+      color: var(--Dark-blue);
+      padding-bottom: 15px;
+    }
+    & p{
+      color: var(--Grayish-blue);
+    }
+  }
+
+}
+/* Link Youtube */
+/* .link{
+  display: flex;
+  gap: 5px;
+
+  position: fixed;
+  background-color: #d12322;
+  padding: 23px 40px;
+  right: -90px;
+  border-radius: 5px;
+  top: 50%;
+
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
+
+  transition: all 0.1s ease-in-out;
+
+  & a{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--White);
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  & svg{
+    color: var(--White);  
+  }
+} */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--Grayish-blue);
+  & a{
+    text-decoration: none;
+    font-weight: var(--fw-regular);
+    color: var(--Dark-blue);
+  }
+}
+
